@@ -1,91 +1,72 @@
-﻿<!--
- * Escrito por Alberto García González.
- * Contacto: alberto.garciagonza@alum.uca.es
- * 
- * Copyright 2012 - 2014 Alberto García González.
- * 
- * Este fichero es parte de Campus UCA.
- * 
- * Campus UCA es software libre: puede redistribuirlo y/o modificarlo
- * bajo los términos de la GNU General Public License tal como han sido 
- * publicados por la Free Software Foundation, bien de la versión 3 de
- * la licencia o de cualquier versión posterior (a su elección).
- * 
- * Campus UCA se distribuye con la esperanza de que sea útil,
- * pero SIN NINGUNA GARANTÍA, incluso sin la garantía implícita de
- * COMERCIALIZACIÓN o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Consulte la
- * GNU General Public License para más detalles.
- * 
- * Debería haber recibido una copia de la GNU General Public License
- * junto con Campus UCA. Si no es así, consulte <http://www.gnu.org/licenses/>.
- *
--->
-
-<html>
+﻿<html>
 <head>
-     <title>Opciones - CampusUCA</title>
-     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-     <link rel="stylesheet" type="text/css" href="../css/opciones.css" />
+    <title>Opciones - CampusUCA</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/opciones.css"/>
 </head>
 <body>
-     <div id="contenido">
-          <div id="opciones">
-               <div id="cabecera">Opciones - CampusUCA</div>
-               <div class="optGroup">
-                    <div class="optTitle">Asignaturas</div>
-                    <div class="optContent">
-                         <input type="radio" id="rdoAsigMostrarNombre" name="grpAsignaturas">
-                              <label for="rdoAsigMostrarNombre">Mostrar nombres</label>
-                         </input>
-                         <input type="radio" id="rdoAsigMostrarSiglas" name="grpAsignaturas">
-                              <label for="rdoAsigMostrarSiglas">Mostrar siglas</label>
-                         </input>
-                    </div>
-               </div>
-               <div class="optGroup">
-                    <div class="optTitle">Grado</div>
-                    <div class="optContent">
-                         <input type="checkbox" id="cbMostrarGrado"><label for="cbMostrarGrado">Mostrar el nombre del grado junto al de cada asignatura</label>
-                    </div>
-               </div>
-               <div class="optGroup">
-                    <div class="optTitle">Enlaces del botón</div>
-                    <div class="optContent">
-                         <div id="listaAsignaturas">
-                              <ul>
-                                   <li><input type="checkbox" id="0"><label for="0">Universidad de Cádiz</label></input></li>
-                                   <li><input type="checkbox" id="1"><label for="1">Campus Virtual</label></input></li>
-                                   <li><input type="checkbox" id="2"><label for="2">Correo electrónico</label></input></li>
-                                   <li><input type="checkbox" id="3"><label for="3">Expediente Académico</label></input></li>
-                                   <li><input type="checkbox" id="4"><label for="4">RedCampus</label></input></li>
-                                   <li><input type="checkbox" id="5"><label for="5">Reserva de salas de trabajo</label></input></li>
-                                   <li><input type="checkbox" id="6"><label for="6">Reserva de portátiles</label></input></li>
-                                   <li><input type="checkbox" id="7"><label for="7">Préstamos actuales</label></input></li>
-                                   <li><input type="checkbox" id="8"><label for="8">Catálogo de la biblioteca</label></input></li>
-                                   <li><input type="checkbox" id="9"><label for="9">Consulta al bibliotecario</label></input></li>
-                                   <li><input type="checkbox" id="10"><label for="10">Buzón de Atención al Usuario</label></input></li>
-                                   <li><input type="checkbox" id="11"><label for="11">Banco de empleo</label></input></li>
-                                   <li><input type="checkbox" id="12"><label for="12">Preactas</label></input></li>
-                                   <li><input type="checkbox" id="13"><label for="13">Horarios de tutorías</label></input></li>
-                              </ul>
-                         </div>
-                    </div>
-               </div>
-               <div class="optGroup">
-                    <div id="estado"></div>
-                    <button id="guardar">Guardar</button>
-               </div>
-          </div>
-          <div id="pie">
-               <div id="infoPie">
-                    Versión 0.7.2
-                    <a href="https://github.com/alberh/CampusUCA">Ver el proyecto en GitHub</a>
-               </div>
-               <div id="licencia">
-                    Este programa se distribuye bajo la GNU General Public License. <a href="http://www.gnu.org/licenses/" target="_blank">Más información</a>.<br />
-               </div>
-          </div>
-     </div> <!-- contenido -->
+<div id="contenido">
+    <div id="opciones">
+        <div id="cabecera">Opciones - CampusUCA</div>
+        <div class="optGroup">
+            <div class="optTitle">Asignaturas</div>
+            <div class="optContent">
+                <input type="radio" id="rdoAsigMostrarNombre" name="grpAsignaturas">
+                <label for="rdoAsigMostrarNombre">Mostrar nombres</label>
+                </input>
+                <input type="radio" id="rdoAsigMostrarSiglas" name="grpAsignaturas">
+                <label for="rdoAsigMostrarSiglas">Mostrar siglas</label>
+                </input>
+            </div>
+        </div>
+        <div class="optGroup">
+            <div class="optTitle">Grado</div>
+            <div class="optContent">
+                <input type="checkbox" id="cbMostrarGrado"><label for="cbMostrarGrado">Mostrar el nombre del grado junto
+                al de cada asignatura</label>
+            </div>
+        </div>
+        <div class="optGroup">
+            <div class="optTitle">Enlaces del botón</div>
+            <div class="optContent">
+                <div id="listaAsignaturas">
+                    <ul>
+                        <li><input type="checkbox" id="0"><label for="0">Universidad de Cádiz</label></input></li>
+                        <li><input type="checkbox" id="1"><label for="1">Campus Virtual</label></input></li>
+                        <li><input type="checkbox" id="2"><label for="2">Correo electrónico</label></input></li>
+                        <li><input type="checkbox" id="3"><label for="3">Expediente Académico</label></input></li>
+                        <li><input type="checkbox" id="4"><label for="4">RedCampus</label></input></li>
+                        <li><input type="checkbox" id="5"><label for="5">Reserva de salas de trabajo</label></input>
+                        </li>
+                        <li><input type="checkbox" id="6"><label for="6">Reserva de portátiles</label></input></li>
+                        <li><input type="checkbox" id="7"><label for="7">Préstamos actuales</label></input></li>
+                        <li><input type="checkbox" id="8"><label for="8">Catálogo de la biblioteca</label></input></li>
+                        <li><input type="checkbox" id="9"><label for="9">Consulta al bibliotecario</label></input></li>
+                        <li><input type="checkbox" id="10"><label for="10">Buzón de Atención al Usuario</label></input>
+                        </li>
+                        <li><input type="checkbox" id="11"><label for="11">Banco de empleo</label></input></li>
+                        <li><input type="checkbox" id="12"><label for="12">Preactas</label></input></li>
+                        <li><input type="checkbox" id="13"><label for="13">Horarios de tutorías</label></input></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="optGroup">
+            <div id="estado"></div>
+            <button id="guardar">Guardar</button>
+        </div>
+    </div>
+    <div id="pie">
+        <div id="infoPie">
+            Versión 0.7.2
+            <a href="https://github.com/alberh/CampusUCA">Ver el proyecto en GitHub</a>
+        </div>
+        <div id="licencia">
+            Este programa se distribuye bajo la GNU General Public License. <a href="http://www.gnu.org/licenses/"
+                                                                               target="_blank">Más información</a>.<br/>
+        </div>
+    </div>
+</div> <!-- contenido -->
 </body>
 <script type="text/javascript" src="../js/opciones.js"></script>
 </html>
